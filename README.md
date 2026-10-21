@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# Online Courses — Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Online Courses** is a React-based web application designed for browsing and managing online courses across different technology and programming topics.
 
-## Available Scripts
+This repository contains the **frontend**, developed with **React, JavaScript, and Material UI**. It provides user registration, login, course exploration, and personalized course management through a component-based interface.
 
-In the project directory, you can run:
+## Tech stack
 
-### `npm start`
+- **React** — component-based user interface
+- **JavaScript** — frontend application logic
+- **Material UI** — UI components and styling
+- **React Router** — client-side navigation and protected routes
+- **React Context API** — authentication and application state management
+- **Local Storage** — client-side persistence of user and course data
+- **Notistack** — notifications and user feedback
+- **Create React App** — development and build tooling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Authentication and user management
 
-### `npm test`
+- User registration and login.
+- Email uniqueness validation during registration.
+- Authentication state management using React Context API.
+- Protected routes accessible only to authenticated users.
+- Conditional navigation based on authentication status.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Course discovery and management
 
-### `npm run build`
+- Browse a catalog of 12 online courses covering programming, web development, cybersecurity, and other technology topics.
+- View course details, descriptions, categories, and durations.
+- Explore courses through interactive cards.
+- Add and remove courses from a personalized list.
+- Access a dedicated "My Courses" page.
+- Persist selected courses using browser Local Storage.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### User interface
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Reusable React components for navigation, course cards, and page layouts.
+- Responsive course grid using Material UI.
+- Dynamic navigation using React Router.
+- Success and information notifications for course management actions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Architecture
 
-### `npm run eject`
+The frontend is a **single-page application (SPA)** built with React.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application uses React Router for navigation, Context API for shared state management, and Local Storage for client-side data persistence.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```text
+      React + Material UI
+               |
+         React Router
+               |
+        React Context API
+               |
+          Local Storage
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The project is implemented entirely on the client side and does not require a separate backend or database server.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Running locally
 
-## Learn More
+Prerequisites include **Node.js**, **npm**, and **Git**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone the repository:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/RaresDDB/cursuri-online-website-react.git
+```
 
-### Code Splitting
+Navigate to the project directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd cursuri-online-website-react
+```
 
-### Analyzing the Bundle Size
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm install
+```
 
-### Making a Progressive Web App
+Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm start
+```
 
-### Advanced Configuration
+The application runs locally at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To create a production build:
 
-### Deployment
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Project context
 
-### `npm run build` fails to minify
+Online Courses was developed as a frontend project focused on **React development, client-side routing, state management, and interactive user interfaces**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project provided practical experience in:
+
+- React components and hooks
+- JavaScript application development
+- React Context API
+- Client-side routing and protected routes
+- Local Storage integration
+- Material UI and responsive layouts
+- User interaction and state management
+
+**Author:** Costin-Rareș-Călin Pârlea
+
+> This repository showcases a client-side educational platform prototype. Authentication and data storage are implemented locally for demonstration purposes, without a production backend.
